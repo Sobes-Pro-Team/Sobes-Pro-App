@@ -8,6 +8,8 @@ from app.core.db.models import User
 from app.modules.auth.repository import AuthRepository
 from app.modules.auth.service import AuthService
 
+DEMO_USER_ID = UUID("00000000-0000-0000-0000-0000000000d0")
+
 
 def get_auth_repository() -> AuthRepository:
     return AuthRepository(database)
@@ -24,18 +26,27 @@ def get_auth_service(
     )
 
 
-async def get_current_user(
+async def get_optional_user(
     request: Request,
     service: AuthService = Depends(get_auth_service),
-) -> User:
+) -> User | None:
     token = request.cookies.get(settings.session_cookie_name)
-    user = await service.current_user(token)
+    return await service.current_user(token)
+
+
+async def get_current_user(
+    user: User | None = Depends(get_optional_user),
+) -> User:
     if user is None:
         raise HTTPException(status_code=401, detail="Not authenticated")
     return user
 
 
 async def get_current_user_id(
-    user: User = Depends(get_current_user),
+    user: User | None = Depends(get_optional_user),
 ) -> UUID:
-    return user.id
+    if user is not None:
+        return user.id
+    if settings.demo_mode:
+        return DEMO_USER_ID
+    raise HTTPException(status_code=401, detail="Not authenticated")

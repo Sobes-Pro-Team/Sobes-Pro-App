@@ -1,5 +1,5 @@
 import type { PageId } from "../config";
-import { config, publicUrl } from "../config";
+import { publicUrl } from "../config";
 
 const icons: Record<string, { active: string; inactive: string }> = {
   tests: {
@@ -20,20 +20,25 @@ const icons: Record<string, { active: string; inactive: string }> = {
   },
 };
 
+type NavPage = { id: PageId; title: string };
+
 type Props = {
   active: PageId;
   onChange: (id: PageId) => void;
+  pages: readonly NavPage[];
 };
 
-export function BottomNav({ active, onChange }: Props) {
+export function BottomNav({ active, onChange, pages }: Props) {
+  const columns = pages.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-4";
+
   return (
     <nav
-      className="
+      className={`
         relative flex items-center justify-around w-full max-w-md mx-auto bg-[#f5f3ef] px-3 py-2 rounded-t-3xl shadow-lg border-t border-line
-        sm:grid sm:grid-cols-4 sm:max-w-none sm:mx-0 sm:rounded-none sm:px-2 sm:py-2 sm:shadow-none
-      "
+        sm:grid ${columns} sm:max-w-none sm:mx-0 sm:rounded-none sm:px-2 sm:py-2 sm:shadow-none
+      `}
       aria-label="Навигация">
-      {config.app.pages.map((page) => {
+      {pages.map((page) => {
         const isActive = active === page.id;
         const pageIcons = icons[page.id] || { active: "", inactive: "" };
 

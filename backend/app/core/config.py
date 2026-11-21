@@ -37,6 +37,8 @@ class Settings(BaseSettings):
 
     resume_parse_concurrency: int = 1
 
+    demo_mode: bool = False
+
     google_client_id: str = ""
     telegram_client_id: str = ""
     telegram_client_secret: str = ""
