@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     openrouter_api_key: str = ""
     aiai_api_key: str = ""
 
-    ai_default_provider: str = "openrouter"
+    ai_default_provider: str = "aiai"
     ai_cors_origins: str = "http://localhost:5273,https://localhost:5273,https://albionvisual.github.io"
     ai_timeout_seconds: float = 120.0
     ai_max_messages: int = 100

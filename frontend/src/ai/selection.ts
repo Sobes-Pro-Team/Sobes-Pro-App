@@ -35,15 +35,23 @@ export function resolveSelection(): {
 } {
   const options = listAvailableModels()
   const preferred = config.ai.preferredProvider
-  const saved = parseModelId(getSelectedModelId())
+  const savedId = getSelectedModelId()
+  const saved = parseModelId(savedId)
+  const catalogDefault = getCatalogDefault()
+  const defaultOption = options.find(
+    (option) =>
+      option.provider === catalogDefault.provider &&
+      option.model === catalogDefault.model,
+  )
   const match =
-    options.find((option) => option.id === getSelectedModelId()) ||
+    options.find((option) => option.id === savedId) ||
     options.find(
       (option) =>
         saved &&
         option.provider === saved.provider &&
         option.model === saved.model,
     ) ||
+    defaultOption ||
     options.find((option) => option.provider === preferred) ||
     options[0] ||
     null

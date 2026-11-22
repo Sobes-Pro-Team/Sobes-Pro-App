@@ -44,13 +44,11 @@ PROVIDER_CATALOG: dict[str, ProviderDef] = {
     "aiai": _provider(
         "AIAI",
         [
-            ("gemini-3.5-flash-lite", "Gemini 3.5 Flash Lite"),
-            ("deepseek-v4.1-flash", "DeepSeek V4.1 Flash"),
+            ("claude-sonnet-5", "Claude Sonnet 5"),
             ("gpt-6-luna", "GPT-6 Luna"),
             ("gemini-4-argon", "Gemini 4 Argon"),
-            ("claude-sonnet-5", "Claude Sonnet 5"),
         ],
-        "gemini-3.5-flash-lite",
+        "claude-sonnet-5",
     ),
     "mock": _provider("Локально", [("demo", "Демо")], "demo"),
 }
