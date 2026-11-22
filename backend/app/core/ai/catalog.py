@@ -46,6 +46,9 @@ PROVIDER_CATALOG: dict[str, ProviderDef] = {
         [
             ("gemini-3.5-flash-lite", "Gemini 3.5 Flash Lite"),
             ("deepseek-v4.1-flash", "DeepSeek V4.1 Flash"),
+            ("gpt-6-luna", "GPT-6 Luna"),
+            ("gemini-4-argon", "Gemini 4 Argon"),
+            ("claude-sonnet-5", "Claude Sonnet 5"),
         ],
         "gemini-3.5-flash-lite",
     ),

@@ -22,8 +22,8 @@ export function InterviewStart({ onVacancyPrep, onPractice }: Props) {
 				className="h-28 w-full min-w-0 md:max-w-80 flex flex-col items-start p-5 rounded-3xl bg-[#f5f3ef] text-ink hover:bg-[#ede9e2] transition-all justify-center shadow-sm cursor-pointer border-0"
 				onClick={onPractice}
 			>
-				<span className="text-xl font-bold mb-1 text-ink">Просто тренируюсь</span>
-				<span className="text-sm text-ink/70 text-left">Выберите необходимый язык</span>
+				<span className="text-xl font-bold mb-1 text-ink w-full text-left">Просто тренируюсь</span>
+				<span className="text-sm text-ink/70 text-left w-full">Общие вопросы для подготовки</span>
 			</button>
 		</div>)
 }

@@ -6,6 +6,7 @@ import { ChatMessageList } from "./ChatMessageList";
 import { Composer } from "../interview/Composer";
 // import { FeedbackActions } from '../interview/FeedbackActions'
 import { ResumeStartGrid } from "./ResumeStartGrid";
+import { resumePresets } from "./presets";
 import type { ResumeMode, ResumePhase } from "./useResumeSession";
 
 type Props = {
@@ -46,6 +47,7 @@ export function ChatView({
   onSend,
 }: Props) {
   const [presetText, setPresetText] = useState<string>("");
+  const [presetId, setPresetId] = useState<string | null>(null);
   const [fileInfo, setFileInfo] = useState<FileInfo | null>(null);
   const [fileError, setFileError] = useState("");
   const [extracting, setExtracting] = useState(false);
@@ -62,6 +64,7 @@ export function ChatView({
     try {
       const extracted = await extractResume(file);
       setPresetText(extracted.text);
+      setPresetId(null);
       setFileInfo({
         filename: extracted.filename,
         sourceType: extracted.source_type,
@@ -93,6 +96,11 @@ export function ChatView({
   useEffect(() => {
     if (busy) stopAll();
   }, [busy, stopAll]);
+
+  const choosePreset = (id: string, text: string) => {
+    setPresetId(id);
+    setPresetText(text);
+  };
 
   const handleSubmit = (text: string) => {
     if (isIdle) {
@@ -136,6 +144,9 @@ export function ChatView({
       : <div className="flex flex-col gap-1 p-2 pt-0">
           {isIdle && (
             <div className="flex flex-col gap-2">
+              <span className="text-sm font-normal text-gray-500 text-left">
+                Загрузите своё или попробуйте готовое резюме
+              </span>
               <div className="flex flex-wrap items-center gap-2">
                 <input
                   ref={fileInputRef}
@@ -146,20 +157,35 @@ export function ChatView({
                 />
                 <button
                   type="button"
-                  className="px-3 py-2 rounded-2xl border border-[#b6b3ad] bg-white text-sm font-medium text-gray-800 hover:bg-[#f5f3ef] transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="shrink-0 px-3 py-2 rounded-2xl border border-[#b6b3ad] bg-white text-sm font-medium text-gray-800 hover:bg-[#f5f3ef] transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   onClick={() => fileInputRef.current?.click()}
                   disabled={extracting || busy}
                 >
                   {extracting ? "Извлекаю текст…" : "Загрузить PDF/DOCX"}
                 </button>
 
-                {fileInfo ? (
-                  <span className="text-xs text-gray-500">
-                    {fileInfo.filename} · {fileInfo.chars} символов
-                    {fileInfo.truncated ? " · текст обрезан" : ""}
-                  </span>
-                ) : null}
+                {resumePresets.map((preset) => (
+                  <button
+                    key={preset.id}
+                    type="button"
+                    onClick={() => choosePreset(preset.id, preset.text)}
+                    className={`shrink-0 px-3 py-2 border border-[#b6b3ad] rounded-2xl text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
+                      presetId === preset.id
+                        ? "bg-[#98D2B9] text-gray-900"
+                        : "bg-[#f5f3ef] text-gray-800 hover:bg-[#ede9e2]"
+                    }`}
+                  >
+                    {preset.label}
+                  </button>
+                ))}
               </div>
+
+              {fileInfo ? (
+                <span className="text-xs text-gray-500">
+                  {fileInfo.filename} · {fileInfo.chars} символов
+                  {fileInfo.truncated ? " · текст обрезан" : ""}
+                </span>
+              ) : null}
 
               {fileError ? (
                 <p className="m-0 text-sm text-danger">{fileError}</p>
