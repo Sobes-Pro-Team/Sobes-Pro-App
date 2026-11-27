@@ -1595,6 +1595,2666 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "c",
+      "icon": "©\uFE0F",
+      "title": "C",
+      "test_sets": [
+        {
+          "title": "Тест 1",
+          "questions": [
+            {
+              "question": "Как объявить целочисленную переменную x?",
+              "options": [
+                "int x;",
+                "integer x;",
+                "var x;"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой заголовок объявляет printf()?",
+              "options": [
+                "<iostream>",
+                "<string>",
+                "<stdio.h>"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Чем завершается инструкция C?",
+              "options": [
+                ",",
+                "; ",
+                ":"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой формат printf используется для int?",
+              "options": [
+                "%d",
+                "%f",
+                "%s"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как получить адрес переменной x?",
+              "options": [
+                "*x",
+                "%x",
+                "&x"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой оператор означает логическое И?",
+              "options": [
+                "and",
+                "&&",
+                "&"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает sizeof(int)?",
+              "options": [
+                "Размер int в байтах на платформе",
+                "Всегда 2",
+                "Адрес int"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить массив из 10 int?",
+              "options": [
+                "int a(10);",
+                "array int a[10];",
+                "int a[10];"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой цикл выполняется минимум один раз?",
+              "options": [
+                "for",
+                "do...while",
+                "while"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что означает NULL для указателя?",
+              "options": [
+                "Нулевой указатель",
+                "Пустая строка",
+                "Первый элемент"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 2",
+          "questions": [
+            {
+              "question": "Как объявить указатель на int?",
+              "options": [
+                "int p;",
+                "int &p;",
+                "int *p;"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает *p для указателя p?",
+              "options": [
+                "Освобождает память",
+                "Разыменовывает указатель",
+                "Получает адрес p"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какая функция выделяет динамическую память?",
+              "options": [
+                "malloc()",
+                "new",
+                "alloc()"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Чем освобождают память malloc()?",
+              "options": [
+                "delete",
+                "release()",
+                "free()"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой заголовок объявляет malloc()?",
+              "options": [
+                "<memory>",
+                "<stdlib.h>",
+                "<stdio.h>"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает strlen(s)?",
+              "options": [
+                "Длину строки без завершающего нуля",
+                "Размер указателя",
+                "Адрес строки"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как проверить нулевой указатель p?",
+              "options": [
+                "p = NULL",
+                "*p == NULL",
+                "p == NULL"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что может быть при разыменовании неинициализированного указателя?",
+              "options": [
+                "Всегда 0",
+                "Неопределённое поведение",
+                "Автовыделение памяти"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как передаётся параметр-массив в функцию C?",
+              "options": [
+                "Как указатель на первый элемент",
+                "Всегда копируется целиком",
+                "Только как void"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает calloc()?",
+              "options": [
+                "Только освобождает память",
+                "Создаёт файл",
+                "Выделяет память и обнуляет байты"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 3",
+          "questions": [
+            {
+              "question": "Как объявить структуру Point?",
+              "options": [
+                "type Point = {x,y};",
+                "struct Point { int x; int y; };",
+                "class Point { int x; };"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как обратиться к полю через указатель p?",
+              "options": [
+                "p->x",
+                "p.x",
+                "*p.x"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает typedef?",
+              "options": [
+                "Выделяет память",
+                "Объявляет функцию",
+                "Создаёт псевдоним типа"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое enum?",
+              "options": [
+                "Динамический массив",
+                "Перечислимый тип",
+                "Указатель"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает static у локальной переменной?",
+              "options": [
+                "Сохраняет значение между вызовами",
+                "Создаёт новую переменную при каждом вызове",
+                "Делает её внешней"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что запрещает const int *p?",
+              "options": [
+                "Изменять сам p",
+                "Передавать p в функцию",
+                "Изменять int через p"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает sizeof для локального массива a?",
+              "options": [
+                "Адрес массива",
+                "Размер массива в байтах",
+                "Число элементов всегда"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое рекурсия?",
+              "options": [
+                "Вызов функции самой себя",
+                "Объявление переменных",
+                "Передача по ссылке"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Чем защищают заголовок от повторного включения?",
+              "options": [
+                "#define main",
+                "#include <guard>",
+                "#ifndef/#define/#endif"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое область видимости?",
+              "options": [
+                "Время компиляции",
+                "Часть программы, где доступно имя",
+                "Размер переменной"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 4",
+          "questions": [
+            {
+              "question": "Что означает volatile?",
+              "options": [
+                "Значение может меняться вне обычного потока выполнения",
+                "Гарантирует атомарность",
+                "Запрещает чтение"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое undefined behavior?",
+              "options": [
+                "Гарантированная ошибка компиляции",
+                "Всегда циклический переход",
+                "Поведение, для которого стандарт не задаёт требований"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает realloc()?",
+              "options": [
+                "Освобождает указатель безусловно",
+                "Изменяет размер ранее выделенного блока",
+                "Обнуляет весь блок"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип результата у sizeof?",
+              "options": [
+                "size_t",
+                "int",
+                "void"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое указатель на функцию?",
+              "options": [
+                "Функция без параметров",
+                "Указатель только на char",
+                "Указатель, хранящий адрес функции"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего restrict?",
+              "options": [
+                "Автоосвобождение памяти",
+                "Обещание об отсутствии конфликтующих алиасов для указателя",
+                "Запрет рекурсии"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что верно о переполнении signed int?",
+              "options": [
+                "Это неопределённое поведение",
+                "Всегда циклический переход",
+                "Всегда исключение"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Где располагается flexible array member?",
+              "options": [
+                "Первым глобальным массивом",
+                "Внутри enum",
+                "Последним членом структуры"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего stdatomic.h?",
+              "options": [
+                "Для файлов",
+                "Для атомарных операций",
+                "Для форматирования"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает _Static_assert?",
+              "options": [
+                "Проверяет условие на этапе компиляции",
+                "Проверяет условие при запуске",
+                "Выделяет память"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 5",
+          "questions": [
+            {
+              "question": "Что такое translation unit?",
+              "options": [
+                "Один оператор",
+                "Исполняемый поток",
+                "Исходный файл после препроцессирования с включённым содержимым"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что означает external linkage?",
+              "options": [
+                "Имя существует только во время выполнения",
+                "Имя может обозначать сущность в других единицах трансляции",
+                "Имя доступно только в блоке"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как безопасно использовать результат fopen()?",
+              "options": [
+                "Проверить на NULL",
+                "Считать всегда успешным",
+                "Передать NULL в fclose"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какие операторы побитовые?",
+              "options": [
+                "&& и ||",
+                "! и &&",
+                "& и |"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что следует сделать после fopen()?",
+              "options": [
+                "Обнулить FILE вручную",
+                "Закрыть поток через fclose()",
+                "Освободить FILE* через free()"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает _Generic?",
+              "options": [
+                "Выбирает выражение по типу на этапе компиляции",
+                "Создаёт шаблоны C++",
+                "Выполняет динамическую диспетчеризацию"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип атомарных объектов в C11?",
+              "options": [
+                "atomic<T>",
+                "volatile<T>",
+                "_Atomic"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что означает const int *p?",
+              "options": [
+                "p становится глобальным",
+                "Нельзя менять *p через этот указатель",
+                "Нельзя менять p"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает fseek()?",
+              "options": [
+                "Перемещает позицию файлового потока",
+                "Закрывает файл",
+                "Читает строку"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какое значение возвращает main при успешном завершении по соглашению?",
+              "options": [
+                "-1",
+                "1",
+                "0"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "csharp",
+      "icon": "#\uFE0F⃣",
+      "title": "C#",
+      "test_sets": [
+        {
+          "title": "Тест 1",
+          "questions": [
+            {
+              "question": "Как объявить целочисленную переменную?",
+              "options": [
+                "int count = 5;",
+                "integer count = 5;",
+                "var int count = 5;"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как называется точка входа приложения?",
+              "options": [
+                "Start()",
+                "RunApp()",
+                "Main()"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как вывести строку в консоль?",
+              "options": [
+                "System.out.println(\"Hi\");",
+                "Console.WriteLine(\"Hi\");",
+                "print(\"Hi\");"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой оператор сравнивает на равенство?",
+              "options": [
+                "==",
+                "=",
+                "==="
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить строку?",
+              "options": [
+                "char name = \"Ada\";",
+                "text name = \"Ada\";",
+                "string name = \"Ada\";"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип хранит true/false?",
+              "options": [
+                "bit",
+                "bool",
+                "boolean"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как создать объект Person?",
+              "options": [
+                "new Person()",
+                "Person()",
+                "new Person"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какое ключевое слово задаёт условие?",
+              "options": [
+                "when",
+                "caseif",
+                "if"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как получить длину строки s?",
+              "options": [
+                "s.Size",
+                "s.Length",
+                "s.Count"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как начинается однострочный комментарий?",
+              "options": [
+                "//",
+                "#",
+                "<!--"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 2",
+          "questions": [
+            {
+              "question": "Как объявить массив из трёх int?",
+              "options": [
+                "int a = [1,2,3];",
+                "array<int> a;",
+                "int[] a = {1,2,3};"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой цикл перебирает коллекцию?",
+              "options": [
+                "loop",
+                "foreach",
+                "repeat"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает оператор ???",
+              "options": [
+                "Возвращает правый операнд, если левый null",
+                "Проверяет тип",
+                "Делит целые числа"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить nullable int?",
+              "options": [
+                "nullable int x;",
+                "int! x;",
+                "int? x;"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как обрабатывают исключения?",
+              "options": [
+                "begin...rescue",
+                "try...catch",
+                "try...except"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой модификатор скрывает член от внешнего кода?",
+              "options": [
+                "private",
+                "public",
+                "protected internal"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить авто-свойство?",
+              "options": [
+                "public int Age();",
+                "property Age: int",
+                "public int Age { get; set; }"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает List<T>.Add(x)?",
+              "options": [
+                "Сортирует список",
+                "Добавляет элемент",
+                "Удаляет элемент"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как проверить тип объекта?",
+              "options": [
+                "is",
+                "typeof=",
+                "instance"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что означает var для локальной переменной?",
+              "options": [
+                "Переменная не имеет типа",
+                "Тип меняется при присваивании",
+                "Тип выводится компилятором"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 3",
+          "questions": [
+            {
+              "question": "Как объявить интерфейс?",
+              "options": [
+                "protocol ILogger;",
+                "interface ILogger { void Log(); }",
+                "implements ILogger {}"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как класс реализует интерфейс?",
+              "options": [
+                "class A : ILogger",
+                "class A extends ILogger",
+                "class A uses ILogger"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что означает virtual у метода?",
+              "options": [
+                "Его нельзя вызвать",
+                "Он становится static",
+                "Его можно переопределить в производном классе"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как переопределить виртуальный метод?",
+              "options": [
+                "virtual static M()",
+                "override void M()",
+                "new override void M()"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Для чего using с IDisposable?",
+              "options": [
+                "Автоматически вызывает Dispose в конце области",
+                "Импортирует переменные среды",
+                "Создаёт namespace"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое LINQ?",
+              "options": [
+                "Язык разметки",
+                "Сборщик мусора",
+                "Средства запросов к данным и коллекциям"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает Where в LINQ?",
+              "options": [
+                "Количество элементов",
+                "Отфильтрованную последовательность",
+                "Первый элемент"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое делегат?",
+              "options": [
+                "Типобезопасная ссылка на метод(ы)",
+                "Класс чисел",
+                "Оператор цикла"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как выглядит лямбда?",
+              "options": [
+                "x -> x * 2",
+                "lambda x: x * 2",
+                "x => x * 2"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что позволяет async?",
+              "options": [
+                "Запрещать Task",
+                "Использовать await в асинхронном методе",
+                "Всегда создавать отдельный поток"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 4",
+          "questions": [
+            {
+              "question": "Что обычно возвращает async-метод без результата?",
+              "options": [
+                "Task",
+                "Thread",
+                "void всегда"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Для чего Span<T>?",
+              "options": [
+                "Хранит сокеты",
+                "Запускает потоки",
+                "Представляет непрерывный участок памяти с ограниченным временем жизни"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое record class?",
+              "options": [
+                "Статический класс",
+                "Ссылочный тип с удобной семантикой равенства по значениям",
+                "Перечисление"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает await?",
+              "options": [
+                "Асинхронно ожидает завершения awaitable-операции",
+                "Всегда блокирует процесс",
+                "Всегда создаёт поток"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое boxing?",
+              "options": [
+                "Преобразование строки в число",
+                "Удаление объекта",
+                "Упаковка значимого типа в object/интерфейс"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как детерминированно освобождать ресурсы?",
+              "options": [
+                "Только сборщик мусора",
+                "IDisposable и Dispose",
+                "Только финализатор"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что даёт pattern matching?",
+              "options": [
+                "Сопоставление значений с типами и шаблонами",
+                "Компиляцию во время выполнения",
+                "Глобальные переменные"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что означает covariance IEnumerable<out T>?",
+              "options": [
+                "Позволяет менять T после создания",
+                "Делает коллекцию изменяемой",
+                "Допускает более конкретный T там, где ожидается общий тип"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего ConfigureAwait(false)?",
+              "options": [
+                "Гарантировать новый поток",
+                "Не требовать продолжения на захваченном контексте",
+                "Отменить задачу"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое init-only setter?",
+              "options": [
+                "Свойство можно присваивать при инициализации объекта",
+                "Свойство нельзя читать",
+                "Доступно только наследникам"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 5",
+          "questions": [
+            {
+              "question": "Что такое Span<T> с точки зрения типа?",
+              "options": [
+                "Обычный класс с финализатором",
+                "Массив фиксированного размера",
+                "ref struct, который нельзя хранить в куче как обычный объект"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего lock(obj)?",
+              "options": [
+                "Остановка GC",
+                "Синхронизация критической секции через monitor",
+                "Блокировка файла"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что гарантирует volatile-поле?",
+              "options": [
+                "Ограниченные гарантии видимости и порядка чтений/записей",
+                "Атомарность любых операций",
+                "Защиту от всех гонок"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как передают отмену async-операции?",
+              "options": [
+                "Stopwatch",
+                "ManualResetEvent",
+                "CancellationToken"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое ValueTask<T>?",
+              "options": [
+                "Синхронный итератор",
+                "Обёртка результата async-операции, иногда избегающая выделения Task",
+                "Поток"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить extension method?",
+              "options": [
+                "Статический метод в static-классе с первым параметром this",
+                "Метод с ключевым словом extend",
+                "Метод интерфейса без тела"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое source generator?",
+              "options": [
+                "Профилировщик CPU",
+                "Сборщик мусора",
+                "Генератор исходного кода на этапе компиляции"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что означает required у свойства?",
+              "options": [
+                "Оно доступно только наследникам",
+                "Оно должно быть инициализировано при создании объекта",
+                "Его нельзя читать"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Для чего IAsyncEnumerable<T>?",
+              "options": [
+                "Для асинхронного перебора последовательности",
+                "Для параллельной сортировки",
+                "Только для JSON"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает checked?",
+              "options": [
+                "Проверяет null у каждой переменной",
+                "Запускает анализатор",
+                "Включает проверку переполнения арифметики"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "javascript",
+      "icon": "🟨",
+      "title": "JavaScript",
+      "test_sets": [
+        {
+          "title": "Тест 1",
+          "questions": [
+            {
+              "question": "Как объявить переназначаемую переменную?",
+              "options": [
+                "let x = 1;",
+                "const x = 1;",
+                "fixed x = 1;"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как вывести сообщение в консоль?",
+              "options": [
+                "Console.WriteLine(\"Hi\");",
+                "echo(\"Hi\");",
+                "console.log(\"Hi\");"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как сравнить без приведения типов?",
+              "options": [
+                "=",
+                "===",
+                "=="
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить функцию?",
+              "options": [
+                "function greet() {}",
+                "def greet():",
+                "fn greet() {}"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип у true?",
+              "options": [
+                "Boolean()",
+                "truth",
+                "boolean"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как получить длину массива?",
+              "options": [
+                "length(arr)",
+                "arr.length",
+                "arr.size()"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает typeof \"hello\"?",
+              "options": [
+                "\"string\"",
+                "\"text\"",
+                "\"char\""
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как начинается однострочный комментарий?",
+              "options": [
+                "#",
+                "<!--",
+                "//"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как создать массив?",
+              "options": [
+                "array(1,2,3)",
+                "[1, 2, 3]",
+                "(1, 2, 3)"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает %?",
+              "options": [
+                "Возвращает остаток от деления",
+                "Возводит в степень",
+                "Проверяет тип"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 2",
+          "questions": [
+            {
+              "question": "Как добавить элемент в конец массива?",
+              "options": [
+                "arr.append(x)",
+                "arr.addLast(x)",
+                "arr.push(x)"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает map()?",
+              "options": [
+                "Всегда исходный массив",
+                "Новый массив преобразованных значений",
+                "Первый подходящий элемент"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает filter()?",
+              "options": [
+                "Создаёт массив элементов, прошедших проверку",
+                "Сортирует исходный массив",
+                "Меняет тип массива"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить стрелочную функцию?",
+              "options": [
+                "(x) -> x * 2",
+                "lambda x: x * 2",
+                "(x) => x * 2"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как строго сравнить с undefined?",
+              "options": [
+                "x ==! undefined",
+                "x === undefined",
+                "x = undefined"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает JSON.parse()?",
+              "options": [
+                "Преобразует JSON-текст в значение JS",
+                "Преобразует объект в JSON-текст",
+                "Проверяет HTML"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как создать объект с полем name?",
+              "options": [
+                "[name = \"Ada\"]",
+                "object(name: \"Ada\")",
+                "{ name: \"Ada\" }"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что означает null?",
+              "options": [
+                "Число ноль",
+                "Явно заданное отсутствие значения",
+                "Необъявленная переменная"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как привести строку к нижнему регистру?",
+              "options": [
+                "toLowerCase()",
+                "lower()",
+                "casefold()"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает `Hi ${name}` в template literal?",
+              "options": [
+                "Выполняет SQL",
+                "Создаёт функцию",
+                "Подставляет значение name"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 3",
+          "questions": [
+            {
+              "question": "Что такое Promise?",
+              "options": [
+                "Тип массива",
+                "Объект будущего результата асинхронной операции",
+                "Синхронный цикл"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как дождаться Promise в async-функции?",
+              "options": [
+                "await promise",
+                "yield promise",
+                "wait(promise)"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Promise.all()?",
+              "options": [
+                "Выполняет их строго последовательно",
+                "Игнорирует ошибки",
+                "Ждёт все промисы или отклонение одного"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое closure?",
+              "options": [
+                "Объект JSON",
+                "Функция вместе с доступом к внешнему лексическому окружению",
+                "Функция без параметров"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой метод возвращает первый подходящий элемент массива?",
+              "options": [
+                "find()",
+                "filterOne()",
+                "match()"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает [...arr]?",
+              "options": [
+                "Замораживает массив",
+                "Удаляет дубликаты",
+                "Создаёт новый массив с элементами arr"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое деструктуризация?",
+              "options": [
+                "Сериализация",
+                "Извлечение свойств/элементов в переменные по шаблону",
+                "Удаление свойств"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какова область видимости let?",
+              "options": [
+                "Блочная",
+                "Только глобальная",
+                "Только модульная"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает preventDefault()?",
+              "options": [
+                "Удаляет обработчик",
+                "Останавливает всплытие",
+                "Отменяет стандартное действие события"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает stopPropagation()?",
+              "options": [
+                "Удаляет DOM-узел",
+                "Останавливает распространение события по DOM",
+                "Отменяет HTTP-запрос"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 4",
+          "questions": [
+            {
+              "question": "Чему равен typeof null?",
+              "options": [
+                "\"object\"",
+                "\"null\"",
+                "\"undefined\""
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой метод сортирует копию массива?",
+              "options": [
+                "sortCopy()",
+                "immutableSort()",
+                "toSorted()"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое прототипное наследование?",
+              "options": [
+                "Наследование только через Java-классы",
+                "Делегирование свойств через цепочку прототипов",
+                "Копирование всех полей"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Object.freeze()?",
+              "options": [
+                "Запрещает обычные изменения собственных свойств верхнего уровня",
+                "Рекурсивно замораживает вложенные объекты",
+                "Удаляет прототип"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что находится в microtask queue?",
+              "options": [
+                "Сетевые пакеты ОС",
+                "Синхронные вызовы",
+                "Например, обработчики Promise"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего AbortController?",
+              "options": [
+                "Прерывает любой JS-код",
+                "Сигнализирует отмену поддерживающим API операциям",
+                "Перезапускает браузер"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Чем Map отличается от Object?",
+              "options": [
+                "Map допускает ключи разных типов и сохраняет порядок вставки",
+                "Map хранит только строки",
+                "Object не имеет ключей"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое итератор?",
+              "options": [
+                "Функция сортировки",
+                "DOM-событие",
+                "Объект с методом next()"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Promise.race()?",
+              "options": [
+                "Возвращает только успешные",
+                "Завершается по первому завершившемуся участнику",
+                "Ждёт все результаты"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Для чего WeakMap?",
+              "options": [
+                "Для пар с объектными ключами, не удерживаемыми одной ссылкой из WeakMap",
+                "Для сортировки",
+                "Для примитивных ключей"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 5",
+          "questions": [
+            {
+              "question": "Каковы фазы распространения DOM-события?",
+              "options": [
+                "Всплытие, цель, захват",
+                "Цель, компиляция, захват",
+                "Захват, цель, всплытие"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое named export в ESM?",
+              "options": [
+                "Экспорт HTML",
+                "Экспорт именованных привязок через export",
+                "Экспорт только глобальных переменных"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает import()?",
+              "options": [
+                "Асинхронно загружает модуль и возвращает Promise",
+                "Синхронно вызывает eval",
+                "Удаляет модуль из кэша"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что означает #private поле класса?",
+              "options": [
+                "Доступно только по имени свойства",
+                "Автоматически экспортируется",
+                "Доступ ограничен телом класса"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что верно о tail-call optimization?",
+              "options": [
+                "Автоматически параллелит рекурсию",
+                "Поддержка не является универсальной гарантией во всех JS-движках",
+                "Всегда включена"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает Promise.allSettled()?",
+              "options": [
+                "Статусы и результаты всех промисов",
+                "Первую ошибку",
+                "Только успешные значения"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое SharedArrayBuffer?",
+              "options": [
+                "Обычный JSON-буфер",
+                "Cookies",
+                "Общая память для нескольких агентов, например workers"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего Atomics?",
+              "options": [
+                "Для DOM-рендеринга",
+                "Для атомарных операций с общей памятью",
+                "Для форматирования чисел"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает structuredClone()?",
+              "options": [
+                "Глубоко копирует поддерживаемые структурированные данные",
+                "Копирует только ссылку",
+                "Копирует исключительно через JSON"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой this у стрелочной функции?",
+              "options": [
+                "Всегда window",
+                "Зависит от имени функции",
+                "Захватывается из внешнего лексического окружения"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rust",
+      "icon": "🦀",
+      "title": "Rust",
+      "test_sets": [
+        {
+          "title": "Тест 1",
+          "questions": [
+            {
+              "question": "Как объявить неизменяемую переменную?",
+              "options": [
+                "let x = 5;",
+                "var x = 5;",
+                "const mut x = 5;"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить изменяемую переменную?",
+              "options": [
+                "mut let x = 5;",
+                "var mut x = 5;",
+                "let mut x = 5;"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как вывести форматированное значение?",
+              "options": [
+                "Console.WriteLine(x);",
+                "println!(\"{}\", x);",
+                "print(\"{}\", x);"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить функцию?",
+              "options": [
+                "fn greet() {}",
+                "func greet() {}",
+                "def greet() {}"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип владеет строковыми данными?",
+              "options": [
+                "char[]",
+                "str owned",
+                "String"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип представляет Unicode scalar value?",
+              "options": [
+                "String",
+                "char",
+                "byte"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип обозначает возможное отсутствие значения?",
+              "options": [
+                "Option<T>",
+                "Nullable<T>",
+                "Maybe<T>"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какой вариант Option означает отсутствие?",
+              "options": [
+                "Null",
+                "Empty",
+                "None"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как сравнить значения на равенство?",
+              "options": [
+                "===",
+                "==",
+                "="
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как начать однострочный комментарий?",
+              "options": [
+                "//",
+                "#",
+                "<!--"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 2",
+          "questions": [
+            {
+              "question": "Что такое borrowing?",
+              "options": [
+                "Копирование любого значения",
+                "Ручное освобождение",
+                "Временное использование значения через ссылку без передачи владения"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как создать неизменяемую ссылку?",
+              "options": [
+                "ref x",
+                "&x",
+                "*x"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как создать изменяемую ссылку?",
+              "options": [
+                "&mut x",
+                "mut &x",
+                "*mut x"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Какое правило для активных изменяемых ссылок?",
+              "options": [
+                "Сколько угодно одновременно",
+                "Только глобальные",
+                "Одна изменяемая ссылка без конфликтующих ссылок"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает match?",
+              "options": [
+                "Выделяет память",
+                "Сопоставляет значение с шаблонами",
+                "Объявляет структуру"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как обработать Result?",
+              "options": [
+                "match или методы Result",
+                "try...catch",
+                "except"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает оператор ? с Result?",
+              "options": [
+                "Игнорирует ошибку",
+                "Всегда вызывает panic",
+                "Возвращает Err досрочно, иначе извлекает Ok"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое Vec<T>?",
+              "options": [
+                "Хеш-таблица",
+                "Динамический массив",
+                "Связанный список"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как добавить элемент в Vec?",
+              "options": [
+                "push()",
+                "append()",
+                "insert_end()"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает derive(Debug)?",
+              "options": [
+                "Создаёт отладчик",
+                "Запрещает печать",
+                "Автоматически реализует Debug"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 3",
+          "questions": [
+            {
+              "question": "Что такое trait?",
+              "options": [
+                "Макрос форматирования",
+                "Набор поведения/методов, который реализует тип",
+                "Модуль памяти"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как реализовать трейт для типа?",
+              "options": [
+                "impl Trait for Type {}",
+                "trait Type implements {}",
+                "extend Type: Trait"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое enum?",
+              "options": [
+                "Только целочисленная константа",
+                "Синоним struct",
+                "Тип с несколькими вариантами"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что описывает lifetime?",
+              "options": [
+                "Срок хранения файла",
+                "Область валидности ссылки",
+                "Время работы программы"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Box<T>?",
+              "options": [
+                "Размещает T в куче с владением через указатель",
+                "Создаёт поток",
+                "Делает значение глобальным"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Для чего Rc<T>?",
+              "options": [
+                "Межпоточная блокировка",
+                "Сериализация",
+                "Совместное владение с подсчётом ссылок в одном потоке"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Чем Arc отличается от Rc?",
+              "options": [
+                "Rc потокобезопасен",
+                "Использует атомарный подсчёт ссылок для потокобезопасного совместного владения",
+                "Всегда быстрее"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает iterator map()?",
+              "options": [
+                "Лениво преобразует элементы",
+                "Сразу всегда создаёт Vec",
+                "Сортирует"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает collect()?",
+              "options": [
+                "Удаляет элементы",
+                "Печатает итератор",
+                "Собирает итератор в коллекцию, выведенную из контекста"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить модуль?",
+              "options": [
+                "namespace name;",
+                "mod name;",
+                "module name {}"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 4",
+          "questions": [
+            {
+              "question": "Что означает Send?",
+              "options": [
+                "Тип можно безопасно передавать между потоками",
+                "Тип можно копировать",
+                "Тип обязательно синхронизирован"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что означает Sync?",
+              "options": [
+                "Значение всегда Send",
+                "Тип нельзя разделять",
+                "Ссылки &T можно безопасно передавать между потоками"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что возвращает async fn?",
+              "options": [
+                "Mutex",
+                "Future",
+                "OS-поток"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как обычно выполняют Future?",
+              "options": [
+                "Через runtime/executor",
+                "Оператором new",
+                "Через println!"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Pin<P>?",
+              "options": [
+                "Закрепляет поток за CPU",
+                "Навсегда выделяет стек",
+                "Ограничивает перемещение значения через гарантии Pin API"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое interior mutability?",
+              "options": [
+                "Мутация без правил",
+                "Изменение через общую ссылку с проверкой/синхронизацией",
+                "Изменение только глобальных переменных"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Для чего RefCell<T>?",
+              "options": [
+                "Проверяет правила заимствования во время выполнения в однопоточном сценарии",
+                "Межпоточная блокировка",
+                "Заменяет Vec"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает Mutex<T>?",
+              "options": [
+                "Создаёт immutable ссылку",
+                "Запускает async runtime",
+                "Обеспечивает взаимное исключение"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что такое procedural macro?",
+              "options": [
+                "Функция времени выполнения",
+                "Макрос, обрабатывающий токены и генерирующий код",
+                "Макрос только констант"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что означает ?Sized?",
+              "options": [
+                "Допускает типы без известного статического размера",
+                "Требует Sized",
+                "Обозначает ссылку"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 5",
+          "questions": [
+            {
+              "question": "Что такое orphan rule?",
+              "options": [
+                "Нельзя иметь приватные поля",
+                "Нельзя использовать generics",
+                "Нельзя реализовать внешний трейт для внешнего типа без локального типа/трейта"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего Cow?",
+              "options": [
+                "Только строковый контейнер",
+                "Copy-on-write: заимствованное или принадлежащее значение",
+                "Потоковая очередь"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое GAT?",
+              "options": [
+                "Ассоциированные типы трейта с параметрами",
+                "Глобальные атомарные типы",
+                "Синтаксис макросов"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое dyn Trait?",
+              "options": [
+                "Объект только в стеке",
+                "Синоним generic",
+                "Trait object с динамической диспетчеризацией через vtable"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что задаёт repr(C)?",
+              "options": [
+                "Запрещает оптимизации",
+                "Представление, совместимое с соглашениями C в оговорённых пределах",
+                "Компилирует код на C"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что означает unsafe-блок?",
+              "options": [
+                "Разрешает операции, безопасность которых должен обосновать программист",
+                "Отключает все проверки",
+                "Гарантирует отсутствие UB"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое monomorphization?",
+              "options": [
+                "Динамическая загрузка",
+                "Удаление generic-кода",
+                "Генерация специализированного кода для конкретных generic-параметров"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего Cargo.lock?",
+              "options": [
+                "Хранит ключи компилятора",
+                "Фиксирует точные версии разрешённых зависимостей",
+                "Описывает исходники"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое Cargo feature?",
+              "options": [
+                "Условно включаемая возможность/зависимость сборки",
+                "Изменение синтаксиса",
+                "Автозапуск тестов"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает panic!?",
+              "options": [
+                "Возвращает Result",
+                "Всегда завершает ОС",
+                "Вызывает аварийное завершение текущего потока с unwind или abort по конфигурации"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "go",
+      "icon": "🐹",
+      "title": "Go",
+      "test_sets": [
+        {
+          "title": "Тест 1",
+          "questions": [
+            {
+              "question": "Как объявить переменную с выводом типа?",
+              "options": [
+                "x := 10",
+                "var x := 10",
+                "let x = 10"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить функцию?",
+              "options": [
+                "function add(a,b) {}",
+                "def add(a,b):",
+                "func add(a int, b int) int { ... }"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как вывести строку?",
+              "options": [
+                "print.line(\"Hi\")",
+                "fmt.Println(\"Hi\")",
+                "console.log(\"Hi\")"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой пакет нужен для fmt.Println?",
+              "options": [
+                "fmt",
+                "iofmt",
+                "console"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить срез int?",
+              "options": [
+                "int[]",
+                "slice<int>",
+                "[]int"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как получить длину среза?",
+              "options": [
+                "s.size()",
+                "len(s)",
+                "s.length"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Какой тип логический?",
+              "options": [
+                "bool",
+                "boolean",
+                "bit"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как сравнить на равенство?",
+              "options": [
+                "=",
+                "===",
+                "=="
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как начать комментарий?",
+              "options": [
+                "<!--",
+                "//",
+                "#"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить константу?",
+              "options": [
+                "const Pi = 3.14",
+                "let Pi = 3.14",
+                "final Pi = 3.14"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 2",
+          "questions": [
+            {
+              "question": "Как добавить элементы в срез?",
+              "options": [
+                "s.push(x)",
+                "s.add(x)",
+                "append(s, x)"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что вернёт чтение отсутствующего ключа map?",
+              "options": [
+                "Всегда nil",
+                "Нулевое значение типа значения",
+                "Всегда panic"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как проверить наличие ключа map?",
+              "options": [
+                "v, ok := m[key]",
+                "m.has(key)",
+                "contains(m,key)"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как перебрать срез с индексом и значением?",
+              "options": [
+                "foreach (i,v in s)",
+                "for (i,v) of s",
+                "for i, v := range s"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить структуру?",
+              "options": [
+                "struct User { Name string }",
+                "type User struct { Name string }",
+                "class User { Name string }"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как получить адрес переменной?",
+              "options": [
+                "&x",
+                "*x",
+                "addr(x)"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как объявить указатель на int?",
+              "options": [
+                "&int",
+                "ptr<int>",
+                "*int"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает defer?",
+              "options": [
+                "Повторяет функцию",
+                "Откладывает вызов до выхода из окружающей функции",
+                "Запускает горутину"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как обычно проверяют error?",
+              "options": [
+                "if err != nil",
+                "try/catch",
+                "except"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как запустить горутину?",
+              "options": [
+                "async f()",
+                "thread f()",
+                "go f()"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 3",
+          "questions": [
+            {
+              "question": "Что такое интерфейс Go?",
+              "options": [
+                "Тип только для указателей",
+                "Набор сигнатур методов, реализуемый неявно",
+                "Класс с implements"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как проверить тип интерфейса x?",
+              "options": [
+                "v, ok := x.(T)",
+                "x is T",
+                "cast<T>(x)"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает select?",
+              "options": [
+                "Сортирует каналы",
+                "Всегда выбирает первую ветку",
+                "Ожидает готовности операций на каналах"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как отправить v в канал ch?",
+              "options": [
+                "send(ch,v)",
+                "ch <- v",
+                "ch -> v"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как получить значение из канала?",
+              "options": [
+                "v := <-ch",
+                "v = ch()",
+                "receive ch"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает close(ch)?",
+              "options": [
+                "Удаляет канал из памяти немедленно",
+                "Очищает буфер",
+                "Закрывает канал для дальнейших отправок"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как создать буферизованный канал на 5 элементов?",
+              "options": [
+                "chan int[5]",
+                "make(chan int, 5)",
+                "new(chan int,5)"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое метод с receiver?",
+              "options": [
+                "Функция, связанная с типом через receiver-параметр",
+                "Глобальная main",
+                "Метод интерфейса без реализации"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Для чего sync.WaitGroup?",
+              "options": [
+                "Автоматически защищать map",
+                "Создавать каналы",
+                "Ждать завершения группы горутин"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего context.Context?",
+              "options": [
+                "Форматировать строки",
+                "Передавать дедлайны, отмену и request-scoped значения",
+                "Хранить глобальные переменные"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 4",
+          "questions": [
+            {
+              "question": "Что такое data race?",
+              "options": [
+                "Несинхронизированный конкурентный доступ к памяти, где есть запись",
+                "Любой запуск двух горутин",
+                "Ожидание на канале"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Как запустить детектор гонок?",
+              "options": [
+                "go vet -threads",
+                "go build --safe",
+                "go test -race"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что гарантирует sync.Mutex?",
+              "options": [
+                "Порядок всех горутин",
+                "Взаимное исключение при корректных Lock/Unlock",
+                "Отмену горутин"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как завершать горутину по отмене?",
+              "options": [
+                "Обычно слушать ctx.Done()",
+                "Вызвать kill(goroutine)",
+                "Вернуть из другой функции"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое embedding структур?",
+              "options": [
+                "Наследование классов",
+                "Копирование памяти при вызове",
+                "Встраивание поля-типа с продвижением методов"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что делает errors.Is()?",
+              "options": [
+                "Создаёт ошибку",
+                "Проверяет соответствие ошибки цели в цепочке обёртывания",
+                "Сравнивает только текст"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает errors.As()?",
+              "options": [
+                "Ищет в цепочке ошибку заданного типа",
+                "Преобразует строку",
+                "Проверяет nil всех указателей"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое zero value?",
+              "options": [
+                "Первый элемент массива",
+                "Всегда nil",
+                "Значение типа по умолчанию без явной инициализации"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Что означает any?",
+              "options": [
+                "Синоним pointer",
+                "Псевдоним interface{}",
+                "Тип только для чисел"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Как go test распознаёт тест?",
+              "options": [
+                "По функции TestXxx(t *testing.T)",
+                "По функции test()",
+                "По комментарию //test"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            }
+          ]
+        },
+        {
+          "title": "Тест 5",
+          "questions": [
+            {
+              "question": "Что такое escape analysis?",
+              "options": [
+                "Проверка HTML",
+                "Покрытие тестами",
+                "Анализ, решающий стек или куча для значения"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как запросить диагностику escape analysis?",
+              "options": [
+                "go vet -heap",
+                "go build -gcflags=-m",
+                "go build -escape"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что описывает happens-before?",
+              "options": [
+                "Гарантированный порядок видимости операций между горутинами",
+                "Порядок запуска всех горутин",
+                "Порядок импорта"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что делает atomic.Value?",
+              "options": [
+                "Заменяет любой mutex без ограничений",
+                "Хранит только int",
+                "Атомарно хранит и загружает значение согласованного типа"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Для чего runtime/pprof?",
+              "options": [
+                "HTTP-маршрутизация",
+                "Профилирование CPU, памяти и других характеристик",
+                "Управление зависимостями"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что такое io.Reader?",
+              "options": [
+                "Интерфейс с методом Read([]byte) (int, error)",
+                "Интерфейс с Write(string)",
+                "Тип файлового дескриптора"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Почему interface с типизированным nil может быть не nil?",
+              "options": [
+                "Интерфейс всегда равен nil",
+                "Это ошибка компиляции",
+                "Интерфейс содержит динамический тип"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            },
+            {
+              "question": "Как устроен цикл Go?",
+              "options": [
+                "Циклы только через range",
+                "Ключевое слово for покрывает и обычный цикл, и while-подобный",
+                "Есть отдельные while и do"
+              ],
+              "correct_index": 1,
+              "explanation": null
+            },
+            {
+              "question": "Что делает go test ./...?",
+              "options": [
+                "Запускает тесты во всех пакетах модуля и подкаталогах",
+                "Только компилирует main",
+                "Тестирует один файл"
+              ],
+              "correct_index": 0,
+              "explanation": null
+            },
+            {
+              "question": "Что такое build tags?",
+              "options": [
+                "HTML-теги",
+                "Метки планировщика",
+                "Директивы условного включения файлов в сборку"
+              ],
+              "correct_index": 2,
+              "explanation": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
