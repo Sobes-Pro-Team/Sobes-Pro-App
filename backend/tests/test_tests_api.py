@@ -2,7 +2,11 @@ async def test_catalog_and_attempt_lifecycle(client) -> None:
     languages = await client.get("/api/v1/tests/languages")
     assert languages.status_code == 200
     payload = languages.json()
-    assert {item["slug"] for item in payload} == {"python", "java", "cpp"}
+
+    slugs = {item["slug"] for item in payload}
+    assert {"python", "java", "cpp"} <= slugs
+    assert {"c", "csharp", "javascript", "rust", "go"} <= slugs
+
     assert all(item["tests_count"] == 5 for item in payload)
 
     stats = await client.get("/api/v1/tests/stats")
